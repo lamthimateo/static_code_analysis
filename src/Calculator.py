@@ -13,7 +13,7 @@ m.txtDisplay = Entry(cal,font=('Helevetica',20), textvariable=m.s, relief=FLAT, 
 
 # ROW 1
 RAD=Button(cal,padx=6,bd=0,fg='black',font=('Imprint MT Shadow',11, ),
-            text="RAD", command= lambda:('deg(')).grid(row=1,column=0)
+           text="RAD", command= lambda:('deg(')).grid(row=1,column=0)
 
 DEG=Button(cal,padx=6,bd=0,fg='black',font=('Imprint MT Shadow',11, ),
             text="DEG",command=lambda:c.click('rad(')).grid(row=1,column=1)
