@@ -9,8 +9,19 @@ cal = Tk()
 cal.title('CALCULATOR')
 m.s = StringVar()
 
-m.txtDisplay = Entry(cal, font=('Helevetica', 20), textvariable=m.s, relief=FLAT, bd=7, insertwidth=4, bg="powderblue",
-                     justify='right').grid(row=0, columnspan=90)
+m.txtDisplay = Entry(
+    cal,
+    font=(
+        'Helevetica',
+        20),
+    textvariable=m.s,
+    relief=FLAT,
+    bd=7,
+    insertwidth=4,
+    bg="powderblue",
+    justify='right').grid(
+    row=0,
+    columnspan=90)
 
 # ROW 1
 RAD = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
@@ -19,17 +30,61 @@ RAD = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 DEG = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="DEG", command=lambda: c.click('rad(')).grid(row=1, column=1)
 
-SQROOT = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                text="√", command=lambda: c.click('sqroot(')).grid(row=1, column=2)
+SQROOT = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="√",
+    command=lambda: c.click('sqroot(')).grid(
+    row=1,
+    column=2)
 
-CUBEROOT = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                  text="3√", command=lambda: c.click('cuberoot(')).grid(row=1, column=3)
+CUBEROOT = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="3√",
+    command=lambda: c.click('cuberoot(')).grid(
+    row=1,
+    column=3)
 
-ROOT = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-              text="n√", command=lambda: c.click('root(')).grid(row=1, column=4)
+ROOT = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="n√",
+    command=lambda: c.click('root(')).grid(
+    row=1,
+    column=4)
 
-FAC = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-             text="x!", command=lambda: c.click('factorial(')).grid(row=1, column=5)
+FAC = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="x!",
+    command=lambda: c.click('factorial(')).grid(
+    row=1,
+    column=5)
 
 BRA1 = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
               text="(", command=lambda: c.click('(')).grid(row=1, column=6)
@@ -50,14 +105,47 @@ INV = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 SIN = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="Sin", command=lambda: c.click('sin(')).grid(row=2, column=1)
 
-SININV = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                text="SinInv", command=lambda: c.click('asin(')).grid(row=2, column=2)
+SININV = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="SinInv",
+    command=lambda: c.click('asin(')).grid(
+    row=2,
+    column=2)
 
-cosec = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-               text="Cosec", command=lambda: c.click('cosec(')).grid(row=2, column=3)
+cosec = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="Cosec",
+    command=lambda: c.click('cosec(')).grid(
+    row=2,
+    column=3)
 
-QUAD = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-              text="Quad(a,b,c)", command=lambda: c.click('quad(')).grid(row=2, column=4)
+QUAD = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="Quad(a,b,c)",
+    command=lambda: c.click('quad(')).grid(
+    row=2,
+    column=4)
 
 ABS = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="|x|", command=lambda: c.click('abs(')).grid(row=2, column=5)
@@ -90,8 +178,19 @@ SEC = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 nCr = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="nCr", command=lambda: c.click('nCr(')).grid(row=3, column=4)
 
-SIGN = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-              text='+/-', command=lambda: c.click('sign(')).grid(row=3, column=5)
+SIGN = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text='+/-',
+    command=lambda: c.click('sign(')).grid(
+    row=3,
+    column=5)
 
 btn4 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
               text='4', command=lambda: c.click(4)).grid(row=3, column=6)
@@ -102,18 +201,48 @@ btn5 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 btn6 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
               text='6', command=lambda: c.click(6)).grid(row=3, column=8)
 
-MULTIPLY = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                  text='×', command=lambda: c.click('*')).grid(row=3, column=9)
+MULTIPLY = Button(cal,
+                  padx=6,
+                  bd=0,
+                  fg='black',
+                  font=('Imprint MT Shadow',
+                        11,
+                        ),
+                  text='×',
+                  command=lambda: c.click('*')).grid(row=3,
+                                                     column=9)
 
 # ROW 4
-E = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-           text="e", command=lambda: c.click(2.718281828)).grid(row=4, column=0)
+E = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="e",
+    command=lambda: c.click(2.718281828)).grid(
+    row=4,
+    column=0)
 
 TAN = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="Tan", command=lambda: c.click('tan(')).grid(row=4, column=1)
 
-TANINV = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                text="TanInv", command=lambda: c.click('atan(')).grid(row=4, column=2)
+TANINV = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="TanInv",
+    command=lambda: c.click('atan(')).grid(
+    row=4,
+    column=2)
 
 Cot = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="Cot", command=lambda: c.click('cot(')).grid(row=4, column=3)
@@ -133,24 +262,77 @@ btn2 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 btn3 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
               text="3", command=lambda: c.click(3)).grid(row=4, column=8)
 
-SUBTRACTION = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                     text="-", command=lambda: c.click('-')).grid(row=4, column=9)
+SUBTRACTION = Button(cal,
+                     padx=6,
+                     bd=0,
+                     fg='black',
+                     font=('Imprint MT Shadow',
+                           11,
+                           ),
+                     text="-",
+                     command=lambda: c.click('-')).grid(row=4,
+                                                        column=9)
 
 # ROW 5
-OFF = Button(cal, padx=6, bd=0, bg='crimson', fg='white', font=('Imprint MT Shadow', 11,),
-             text="OFF", command=quit).grid(row=5, column=0)
+OFF = Button(
+    cal,
+    padx=6,
+    bd=0,
+    bg='crimson',
+    fg='white',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="OFF",
+    command=quit).grid(
+    row=5,
+    column=0)
 
 DEL = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="Del", command=lambda: d.delete()).grid(row=5, column=1)
 
-SQUARE = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                text="x^2", command=lambda: c.click('sq(')).grid(row=5, column=2)
+SQUARE = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="x^2",
+    command=lambda: c.click('sq(')).grid(
+    row=5,
+    column=2)
 
-CUBE = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-              text="x^3", command=lambda: c.click('cube(')).grid(row=5, column=3)
+CUBE = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="x^3",
+    command=lambda: c.click('cube(')).grid(
+    row=5,
+    column=3)
 
-POWER = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-               text="x^n", command=lambda: c.click('power(')).grid(row=5, column=4)
+POWER = Button(
+    cal,
+    padx=6,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="x^n",
+    command=lambda: c.click('power(')).grid(
+    row=5,
+    column=4)
 
 LOG = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
              text="log", command=lambda: c.click('log(')).grid(row=5, column=5)
@@ -158,13 +340,44 @@ LOG = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
 btn0 = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
               text="0", command=lambda: c.click('0')).grid(row=5, column=6)
 
-DECIMAL = Button(cal, padx=15, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                 text=".", command=lambda: c.click('.')).grid(row=5, column=7)
+DECIMAL = Button(
+    cal,
+    padx=15,
+    bd=0,
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text=".",
+    command=lambda: c.click('.')).grid(
+    row=5,
+    column=7)
 
-EQUALS = Button(cal, padx=15, bd=0, bg='SKYblue', fg='black', font=('Imprint MT Shadow', 11,),
-                text="=", command=lambda: e.equals()).grid(row=5, column=8)
+EQUALS = Button(
+    cal,
+    padx=15,
+    bd=0,
+    bg='SKYblue',
+    fg='black',
+    font=(
+        'Imprint MT Shadow',
+        11,
+    ),
+    text="=",
+    command=lambda: e.equals()).grid(
+    row=5,
+    column=8)
 
-ADDITION = Button(cal, padx=6, bd=0, fg='black', font=('Imprint MT Shadow', 11,),
-                  text="+", command=lambda: c.click('+')).grid(row=5, column=9)
+ADDITION = Button(cal,
+                  padx=6,
+                  bd=0,
+                  fg='black',
+                  font=('Imprint MT Shadow',
+                        11,
+                        ),
+                  text="+",
+                  command=lambda: c.click('+')).grid(row=5,
+                                                     column=9)
 
 cal.mainloop()

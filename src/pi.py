@@ -1,2 +1,2 @@
 def pi():
-    return 22/7
+    return 22 / 7

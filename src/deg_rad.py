@@ -1,3 +1,5 @@
 import pi
+
+
 def deg(x):
-    return x*((pi.pi())/180)
+    return x * ((pi.pi()) / 180)

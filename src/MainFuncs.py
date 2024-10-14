@@ -1,3 +1,3 @@
-p=""
-txtDisplay=""
-s=""
+p = ""
+txtDisplay = ""
+s = ""
